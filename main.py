@@ -4,7 +4,7 @@ import Holiday
 
 
 def main():
- prompt_response=input("Want to check if you have a day off today?: ")
+ prompt_response=input("Want to check if you have to go to work today?: ")
  if (prompt_response=="Yes"):
    Bapi=Calender.calenderApi()
    result=Bapi.get()
