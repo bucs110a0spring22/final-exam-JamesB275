@@ -7,7 +7,7 @@ class holidayApi:
      :params=None
      :returns=None
      '''
-     self.url='https://isdayoff.ru/today?tz=America/New_York'
+     self.api_url='https://isdayoff.ru/today?tz=America/New_York'
 
     def get(self):
         '''
@@ -15,6 +15,6 @@ class holidayApi:
         :params=None
         :returns=response
         '''
-        r=requests.get(self.url)
+        r=requests.get(self.api_url)
         response=r.json()
         return response

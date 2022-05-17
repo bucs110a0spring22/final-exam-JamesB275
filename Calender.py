@@ -7,7 +7,7 @@ class calenderApi:
       :params=None
       :returns=None
       '''
-      self.url='http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today'
+      self.api_url='http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today'
 
     def get(self):
         '''
@@ -15,6 +15,6 @@ class calenderApi:
         :params=None
         :returns=response
         '''
-        r=requests.get(self.url)
+        r=requests.get(self.api_url)
         response=r.json()
         return response
